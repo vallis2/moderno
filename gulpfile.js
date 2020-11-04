@@ -8,13 +8,14 @@ let gulp = require('gulp'),
     cssmin = require('gulp-cssmin');
 
 gulp.task('sass', function(){
-  return gulp.src('app/scss/style.scss')
+  return gulp.src('app/scss/**/*.scss')
   .pipe(sass({outputStyle: 'compressed'}))
   .pipe(autoprefixer({
     overrideBrowserslist: ['last 8 versions']
   }))
   .pipe(rename({suffix: '.min'}))
   .pipe(gulp.dest('app/css'))
+  .pipe(browserSync.reload({stream: true}))
 });
 
 gulp.task('css', function(){
@@ -26,6 +27,7 @@ gulp.task('css', function(){
     .pipe(concat('libs.min.css'))
     .pipe(cssmin())
     .pipe(gulp.dest('app/css'))
+    .pipe(browserSync.reload({stream: true}))
 });
 
 gulp.task('script', function(){
@@ -36,11 +38,12 @@ gulp.task('script', function(){
     .pipe(concat('libs.min.js'))
     .pipe(uglify())
     .pipe(gulp.dest('app/js'))
+    .pipe(browserSync.reload({stream: true}))
 });
 
 gulp.task('html', function(){
   return gulp.src('app/*.html')
-      .pipe(browserSync.reload({stream: true}))
+    .pipe(browserSync.reload({stream: true}))
 });
 
 gulp.task('js', function(){
