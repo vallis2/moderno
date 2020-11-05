@@ -1,0 +1,142 @@
+.products {
+  background: $bg-product;
+  &__title {
+    font-family: $roboto;
+    font-size: 36px;
+    font-weight: 700;
+    padding-top: 125px;
+    margin-bottom: 65px;
+    text-align: center;
+  }
+  &__wrap {
+    &-btn {
+      text-align: center;
+      margin-bottom: 60px;
+      button {
+        padding: 15px 25px;
+        background: $white;
+        font-family: $roboto;
+        font-size: 14px;
+        font-weight: 500;
+        border: none;
+        cursor: pointer;
+        + button {
+          margin-left: 5px;
+        }
+        &.mixitup-control-active {
+          background: $red;
+          color: $white;
+        }
+      }
+    }
+    &-box {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+.product__item {
+  max-width: 330px;
+  width: 100%;
+  box-shadow: 0px 1px 2px 0px rgba(205, 214, 222, 0.75);
+  background: $white;
+  margin-bottom: 15px;
+  &-img {
+    display: block;
+    min-height: 250px;
+  }
+  &-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+    align-items: center;
+    min-height: 90px;
+    font-family: $roboto;
+    font-weight: 500;
+    border-bottom: 1px solid $brdr;
+
+  }
+  &-name {
+    max-width: 310px;
+  }
+  &-title {
+    font-size: 18px;
+    display: block;
+  }
+  &-categoria {
+    display: block;
+    font-size: 14px;
+    color: $green;
+  }
+  &-price {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  &-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+    align-items: center;
+    min-height: 70px;
+    font-family: $roboto;
+  }
+  &-author {
+    display: flex;
+    align-items: center;
+    .avatar {
+      width: 30px;
+      height: 30px;
+      display: inline-block;
+      border-radius: 50%;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      margin-right: 14px;
+    }
+    span {
+      font-size: 14px;
+      font-weight: 500;
+      color: $text-grey;
+    }
+  }
+}
+.products__bottom-btn{
+  padding-bottom: 110px;
+  text-align: center;
+  button {
+    margin: 75px 5px 0;
+    padding: 20px 30px;
+    background: $white;
+    box-shadow: 0px 1px 3px 0px rgba(204, 216, 228, 0.75);
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    &.mixitup-control-active {
+      background: $red;
+      color: $white;
+    }
+  }
+}
+
+
+
+
+
+
+@media(max-width: 1900px) {
+  .product__item {
+    max-width: 442px;
+  }
+}
+@media(max-width: 1450px) {
+  .product__item {
+    max-width: 330px;
+  }
+  .product__item-img  {
+    min-height: 200px;
+  }
+}
+
+

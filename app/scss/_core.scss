@@ -51,8 +51,21 @@ body {
   padding: 0 15px;
   margin: 0 auto;
 }
+.container-fluid {
+  min-width: 320px;
+  max-width: 100%;
+  padding: 0 30px;
+  margin: 0 auto;
+}
 
 img {
  max-width: 100%;
  height: auto;
+}
+
+@media(max-width: 720px){
+  .container-fluid {
+    padding: 0 15px;
+  }
+
 }
