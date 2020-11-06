@@ -46,6 +46,7 @@
   &-img {
     display: block;
     min-height: 250px;
+    object-fit: cover;
   }
   &-content {
     display: flex;
@@ -85,6 +86,7 @@
   &-author {
     display: flex;
     align-items: center;
+    max-width: 245px;
     .avatar {
       width: 30px;
       height: 30px;
