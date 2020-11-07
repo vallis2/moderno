@@ -1,0 +1,16 @@
+@mixin f500 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+@mixin f700 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+@mixin title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  display: block;
+  text-align: center;
+  margin-bottom: 70px;
+}

@@ -1,0 +1,55 @@
+.advantages {
+  background: $bg-menu;
+  padding: 125px 0 125px;
+  &__title {
+    @include title;
+    color: $white;
+  }
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+    max-width: 370px;
+    text-align: center;
+    padding: 0 15px;
+    &:hover {
+      .advantages__item-icon {
+        background: $green;
+      }
+      .advantages__item-title {
+        color: $green;
+      }
+      .advantages__item-icon svg {
+        fill: $white;
+      }
+    }
+    &-icon {
+      width: 115px;
+      height: 115px;
+      display: block;
+      margin: 0 auto;
+      background: $white;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 30px;
+      transition: all .5;
+      svg {
+        width: 75px;
+      }
+    }
+    &-title {
+      @include f500;
+      font-size: 24px;
+      color: $white;
+      margin-bottom: 30px;
+      transition: all .5;
+    }
+    &-text {
+      color: $text-grey2;
+      font-size: 15px;
+    }
+  }
+}

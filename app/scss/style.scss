@@ -4,8 +4,10 @@
 @import "variables";
 @import "core";
 @import "fonts";
+@import "mixin";
 
 @import "blocks/header";
 @import "blocks/search";
 @import "blocks/products";
 @import "blocks/productSlider";
+@import "blocks/advantages";
