@@ -1,0 +1,25 @@
+.tutorial {
+  padding: 70px 120px;
+  &__title {
+    @include title;
+  }
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+    max-width: 370px;
+    width: 100%;
+    background: #f8f8f8;
+    &-title {
+      @include f700;
+      font-size: 24px;
+      line-height: 60px;
+      text-align: center;
+      padding: 0 10px;
+    }
+  }
+  &__images {
+    min-height: 270px;
+  }
+}
