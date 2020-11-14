@@ -22,7 +22,7 @@
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
-  speak: never;
+  speak-as: never;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -34,8 +34,47 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-search:before {
+  content: "\f002";
+}
+.icon-envelope-o:before {
+  content: "\f003";
+}
+.icon-user:before {
+  content: "\f007";
+}
+.icon-th-large:before {
+  content: "\f009";
+}
+.icon-th-list:before {
+  content: "\f00b";
+}
+.icon-close:before {
+  content: "\f00d";
+}
+.icon-remove:before {
+  content: "\f00d";
+}
+.icon-times:before {
+  content: "\f00d";
+}
+.icon-lock:before {
+  content: "\f023";
+}
 .icon-map-marker:before {
   content: "\f041";
+}
+.icon-edit:before {
+  content: "\f044";
+}
+.icon-pencil-square-o:before {
+  content: "\f044";
+}
+.icon-mail-forward:before {
+  content: "\f064";
+}
+.icon-share:before {
+  content: "\f064";
 }
 .icon-shopping-cart:before {
   content: "\f07a";
@@ -43,14 +82,44 @@
 .icon-phone:before {
   content: "\f095";
 }
+.icon-unlock:before {
+  content: "\f09c";
+}
+.icon-bell-o:before {
+  content: "\f0a2";
+}
+.icon-bars:before {
+  content: "\f0c9";
+}
+.icon-navicon:before {
+  content: "\f0c9";
+}
+.icon-reorder:before {
+  content: "\f0c9";
+}
 .icon-bolt:before {
   content: "\f0e7";
 }
 .icon-flash:before {
   content: "\f0e7";
 }
+.icon-angle-left:before {
+  content: "\f104";
+}
 .icon-angle-right:before {
   content: "\f105";
+}
+.icon-angle-up:before {
+  content: "\f106";
+}
+.icon-angle-down:before {
+  content: "\f107";
+}
+.icon-mail-reply:before {
+  content: "\f112";
+}
+.icon-reply:before {
+  content: "\f112";
 }
 .icon-location-arrow:before {
   content: "\f124";
