@@ -24,6 +24,16 @@ $(function(){
   $('.header__btm-menu').on('click', function(){
     $('.header__box').toggleClass('active');
   });
+
+  $('.tab').on('click', function (e) {
+    e.preventDefault();
+    $($(this).siblings()).removeClass('tab--active');
+    $($(this).closest('.tabs-wrap').siblings().find('div')).removeClass('tabs-content--active');
+
+    $(this).addClass('tab--active');
+    $($(this).attr('href')).addClass('tabs-content--active');
+
+  });
   
 
   
